@@ -5,6 +5,15 @@ package core.basesyntax;
  */
 public class Factorial {
     public int getFactorial(int number) {
-        return 0;
+        if (number < 1) {
+            return 1;
+        }
+
+        int result;
+        if (number == 1) {
+            return 1;
+        }
+        result = number * getFactorial(number - 1);
+        return result;
     }
 }
