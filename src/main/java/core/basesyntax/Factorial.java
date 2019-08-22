@@ -7,8 +7,8 @@ public class Factorial {
     public int getFactorial(int number) {
         if (number != 0) {
             return getFactorial(number - 1) * number;
-        } else {
-            return 1;
         }
+        return 1;
+
     }
 }
