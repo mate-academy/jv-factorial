@@ -8,12 +8,9 @@ public class Factorial {
         if (number < 1) {
             return 1;
         }
-
-        int result;
         if (number == 1) {
             return 1;
         }
-        result = number * getFactorial(number - 1);
-        return result;
+        return number * getFactorial(number - 1);
     }
 }
