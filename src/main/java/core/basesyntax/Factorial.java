@@ -9,6 +9,5 @@ public class Factorial {
             return getFactorial(number - 1) * number;
         }
         return 1;
-
     }
 }
