@@ -7,9 +7,10 @@ package core.basesyntax;
 public class Factorial {
     public int getFactorial(int number) {
         int result = 1;
-        for (int i = 1; i <= number; i++) {
-            result = result * i;
+        if (number == 1 || number == 0) {
+            return result;
         }
+        result = number * getFactorial(number - 1);
         return result;
     }
 }
