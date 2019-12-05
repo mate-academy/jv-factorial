@@ -9,13 +9,6 @@ public class Factorial {
         if (number == 0 || number == 1) {
             return 1;
         }
-        if (number == 2) {
-            return 2;
-        }
         return number * getFactorial(--number);
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new Factorial().getFactorial(5));
     }
 }
