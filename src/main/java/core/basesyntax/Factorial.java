@@ -6,6 +6,9 @@ package core.basesyntax;
  */
 public class Factorial {
     public int getFactorial(int number) {
-        return 0;
+
+        return number == 0
+                ? 1 : number == 1
+                ? 1 : getFactorial(number - 1) * number;
     }
 }
