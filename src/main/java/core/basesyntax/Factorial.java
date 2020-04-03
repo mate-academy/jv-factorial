@@ -6,6 +6,13 @@ package core.basesyntax;
  */
 public class Factorial {
     public int getFactorial(int number) {
-        return 0;
+        return computeFactorialNumber(1, number);
+    }
+
+    private int computeFactorialNumber(int composition, int number) {
+        if (number <= 1) {
+            return composition;
+        }
+        return computeFactorialNumber(composition * number, --number);
     }
 }
