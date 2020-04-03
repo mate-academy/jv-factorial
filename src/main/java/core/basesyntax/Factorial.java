@@ -1,11 +1,16 @@
 package core.basesyntax;
 
-/**
- * <p>Реализуйте метод getFactorial(int number) который вовзращает факториал числа.
- * Реализовать с помощью рекурсии.</p>
- */
 public class Factorial {
+
     public int getFactorial(int number) {
-        return 0;
+        if (number == 1 || number == 0) {
+            return 1;
+        }
+        int[] abc = new int [number];
+        for (int i = 1; i <= abc.length; i++) {
+            abc[abc.length - i] = number;
+            number--;
+        }
+        return abc[abc.length - 1] * getFactorial(abc[abc.length - 2]);
     }
 }
