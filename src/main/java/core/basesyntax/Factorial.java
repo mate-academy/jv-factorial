@@ -10,8 +10,7 @@ public class Factorial {
             return 1;
         } else if (number == 1) {
             return 1;
-        } else {
-            return number * getFactorial(number - 1);
         }
+        return number * getFactorial(number - 1);
     }
 }
