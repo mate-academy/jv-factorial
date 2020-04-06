@@ -9,9 +9,6 @@ public class Factorial {
         if (number < 2) {
             return 1;
         }
-        if (number == 2) {
-            return 2;
-        }
         return getFactorial(number - 1) * number;
     }
 }
