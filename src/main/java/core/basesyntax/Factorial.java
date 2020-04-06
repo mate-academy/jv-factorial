@@ -9,7 +9,6 @@ public class Factorial {
         if (number == 0 || number == 1) {
             return 1;
         }
-        int sum = number * getFactorial(number - 1);
-        return sum;
+        return number * getFactorial(number - 1);
     }
 }
