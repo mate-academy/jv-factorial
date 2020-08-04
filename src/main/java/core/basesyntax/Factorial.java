@@ -5,7 +5,7 @@ package core.basesyntax;
  * Реализовать с помощью рекурсии.</p>
  */
 public class Factorial {
-    public int getFactorial(int number) {
-        return 0;
+    public int getFactorial(int n) {
+        return n == 0 ? 1 : n == 1 ? 1 : n * getFactorial(n - 1);
     }
 }
