@@ -7,8 +7,6 @@ package core.basesyntax;
 
 public class Factorial {
     public int getFactorial(int number) {
-        int result = 1;
         return (number == 1 || number == 0) ? 1 : true ? (number * getFactorial(number - 1)) : 1;
-
     }
 }
