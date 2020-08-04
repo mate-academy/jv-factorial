@@ -11,7 +11,6 @@ public class Factorial {
         if (number <= 1) {
             return result;
         }
-        result = number * getFactorial(number - 1);
-        return result;
+        return number * getFactorial(number - 1);
     }
 }
