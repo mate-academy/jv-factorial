@@ -10,6 +10,5 @@ public class Factorial {
             return 1;
         }
         return number * getFactorial(number - 1);
-
     }
 }
